@@ -14,7 +14,7 @@ import { IonicStorageModule } from '@ionic/storage';
     CommonModule,
     FormsModule,
     IonicModule,
-    
+    IonicStorageModule.forRoot(),
     HomePageRoutingModule
   ],
   declarations: [HomePage]

@@ -8,15 +8,13 @@ const routes: Routes = [
       m => m.HomePageModule)
   },
   {
-    path: 'details/:id', loadChildren:
-      './details/details.module#DetailsPageModule'
+    path: 'details/:id', loadChildren: () => import('src/app/details/details.module').then(m => m.DetailsPageModule)
   },
   {
-    path: 'create', loadChildren:
-      './create/create.module#CreatePageModule'
+    path: 'create', loadChildren: () => import('src/app/create/create.module').then(m => m.CreatePageModule)
   },
   {
-    path: 'edit/:id', loadChildren: './edit/edit.module#EditPageModule'
+    path: 'edit/:id', loadChildren: () => import('src/app/edit/edit.module').then(m => m.EditPageModule)
   },
   {
     path: 'home',

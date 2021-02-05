@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { MoviedbService } from '../core/moviedbservice.service';
 import { IMovie } from '../share/interfaces';
 import { ToastController } from '@ionic/angular';
+
 @Component({
   selector: 'app-details',
   templateUrl: './details.page.html',

@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { ReactiveFormsModule} from '@angular/forms';
 import { MoviedbService } from '../core/moviedbservice.service';
 import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { IMovie } from '../share/interfaces';
+
 @Component({
   selector: 'app-create',
   templateUrl: './create.page.html',
